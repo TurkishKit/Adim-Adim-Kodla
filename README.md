@@ -22,7 +22,9 @@ Her ayın ilk haftası TurkishKit sosyal medyalarında yayınlanan projeler ile 
 
 *İleri seviye geliştiriciler, kodlama macerası yeni başlamış kişilerin çeşitli problemlerle baş edebilmeyi ve algoritmik düşünce yapısını öğrenebilmeleri için her ay yeni bir proje üstünde çalışmalarını öneriyor.*
 
-
+```
+&nbsp;
+```
 
 ### Harakete Geç
 
@@ -30,13 +32,15 @@ Her ayın ilk haftası TurkishKit sosyal medyalarında yayınlanan projeler ile 
 2. Geliştirme kılavuzunundaki adımları takip et. Projeni geliştir.
 3. Uygulamanı #turkishkit etiketi ile paylaş, sosyal medyalarda sana yer verelim.
 
-
+```
+&nbsp;
+```
 
 ### Projeler
 
-| Proje Adı&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; | Açıklama                                                     | Yayımlanma Tarih&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Proje Adı&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; | Açıklama                                                     | Ay&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | :----------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Top Charts                                                   | Apple Music’te yer alan en popüler şarkıları listeler, seçilen şarkıyı Apple Music uygulamasında görüntüler. | 03.02.2020                                                   |
+| Top Charts                                                   | Apple Music’te yer alan en popüler şarkıları listeler, seçilen şarkıyı Apple Music uygulamasında görüntüler. | Şubat 2020                                                   |
 
 
 
