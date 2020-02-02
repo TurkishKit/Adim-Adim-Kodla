@@ -32,11 +32,11 @@ Her ayın ilk haftası TurkishKit sosyal medyalarında yayınlanan projeler ile 
 
 &nbsp;
 
-### Projeler
+## Projeler
 
+![Artboard](/Users/emirhanerdogan/Documents/Xcode/Adim Adim Kodla/images/Artboard.png)
 
-
-###### **Şubat 2020 | Top Charts**
+#### Şubat 2020 | Top Charts
 
 Apple Music’te yer alan en popüler şarkıları listeler, seçilen şarkıyı Apple Music uygulamasında görüntüler.
 
