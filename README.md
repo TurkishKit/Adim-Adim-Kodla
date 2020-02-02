@@ -4,7 +4,7 @@ Bir iPhone uygulamasının nasıl hayata geçtiğini öğreneceğin "Adım Adım
 
 ![Adım Adım Kodla Cover](images/cover.png)
 
-
+&nbsp;
 
 ### Adım Adım Kodla Nedir?
 
@@ -14,7 +14,7 @@ Adım Adım Kodla, kendi iPhone uygulamasını geliştirmek isteyen kişilerin, 
 >
 > iOS, Mac, Apple TV ve Apple Watch uygulamaları geliştirmek için Apple tarafından oluşturulmuş güçlü ve kullanıcı dostu bir programlama dili.
 
-
+&nbsp;
 
 ### Her Ay Yeni Bir Uygulama
 
@@ -34,12 +34,12 @@ Her ayın ilk haftası TurkishKit sosyal medyalarında yayınlanan projeler ile 
 
 ### Projeler
 
-| Proje Adı&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Açıklama                                                     |
+| Proje Adı&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Açıklama                                                     |
 | :----------------------------------------------------------- | ------------------------------------------------------------ |
 | Top Charts                                                   | Apple Music’te yer alan en popüler şarkıları listeler, seçilen şarkıyı Apple Music uygulamasında görüntüler. |
 
+&nbsp;
 
-
-
+&nbsp;
 
 Copyright © 2020 TurkishKit — Tüm Hakları Saklıdır
