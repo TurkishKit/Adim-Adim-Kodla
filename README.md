@@ -36,12 +36,6 @@ Her ayın ilk haftası TurkishKit sosyal medyalarında yayınlanan projeler ile 
 
 ![Artboard](images/top.charts.row.png)
 
-#### Şubat 2020 | Top Charts
-
-Apple Music’te yer alan en popüler şarkıları listeler, seçilen şarkıyı Apple Music uygulamasında görüntüler.
-
-[**Hemen İndir**](https://google.com)
-
 &nbsp;
 
 Copyright © 2020 TurkishKit — Tüm Hakları Saklıdır
