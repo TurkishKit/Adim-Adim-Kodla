@@ -22,9 +22,7 @@ extension UIImageView {
     }
     
     // MARK: - Functions
-    func setImage(fromUrl url: String) {
-        if let imageUrl = URL(string: url) {
-            kf.setImage(with: imageUrl)
-        }
+    func setImage(fromUrl url: URL) {
+        kf.setImage(with: url)
     }
 }

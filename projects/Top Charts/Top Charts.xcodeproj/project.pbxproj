@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E19FDFE23E7629900D8B7AD /* Kingfisher.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 6E19FDF623E7621D00D8B7AD /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6E3EE8B523E6E87C004F1E66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3EE8B423E6E87C004F1E66 /* AppDelegate.swift */; };
 		6E3EE8B723E6E87C004F1E66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3EE8B623E6E87C004F1E66 /* SceneDelegate.swift */; };
 		6E3EE8BC23E6E87C004F1E66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E3EE8BA23E6E87C004F1E66 /* Main.storyboard */; };
@@ -17,10 +18,48 @@
 		6E3EE8CD23E6E8E1004F1E66 /* TopChartsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3EE8CC23E6E8E1004F1E66 /* TopChartsTableViewController.swift */; };
 		6E3EE8D123E6E970004F1E66 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3EE8CF23E6E970004F1E66 /* Extensions.swift */; };
 		6E3EE8D223E6E970004F1E66 /* SongProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3EE8D023E6E970004F1E66 /* SongProvider.swift */; };
-		6E3EE8D523E6EA25004F1E66 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6E3EE8D423E6EA25004F1E66 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6E19FDF523E7621D00D8B7AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E19FDEF23E7621D00D8B7AD /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D1ED2D351AD2D09F00CFC3EB;
+			remoteInfo = Kingfisher;
+		};
+		6E19FDF723E7621D00D8B7AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E19FDEF23E7621D00D8B7AD /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D1F76072230974DE000C5269;
+			remoteInfo = KingfisherSwiftUI;
+		};
+		6E19FDF923E7621D00D8B7AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E19FDEF23E7621D00D8B7AD /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D1ED2D3F1AD2D09F00CFC3EB;
+			remoteInfo = KingfisherTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6E19FDFD23E7627400D8B7AD /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6E19FDFE23E7629900D8B7AD /* Kingfisher.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6E19FDEF23E7621D00D8B7AD /* Kingfisher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kingfisher.xcodeproj; path = Kingfisher/Kingfisher.xcodeproj; sourceTree = SOURCE_ROOT; };
 		6E3EE8B123E6E87C004F1E66 /* Top Charts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Top Charts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E3EE8B423E6E87C004F1E66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E3EE8B623E6E87C004F1E66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,13 +79,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E3EE8D523E6EA25004F1E66 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E19FDF023E7621D00D8B7AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E19FDF623E7621D00D8B7AD /* Kingfisher.framework */,
+				6E19FDF823E7621D00D8B7AD /* KingfisherSwiftUI.framework */,
+				6E19FDFA23E7621D00D8B7AD /* KingfisherTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		6E3EE8A823E6E87C004F1E66 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +126,7 @@
 		6E3EE8CE23E6E906004F1E66 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				6E19FDEF23E7621D00D8B7AD /* Kingfisher.xcodeproj */,
 				6E3EE8CF23E6E970004F1E66 /* Extensions.swift */,
 				6E3EE8D023E6E970004F1E66 /* SongProvider.swift */,
 				6E3EE8B423E6E87C004F1E66 /* AppDelegate.swift */,
@@ -99,6 +148,7 @@
 				6E3EE8AD23E6E87C004F1E66 /* Sources */,
 				6E3EE8AE23E6E87C004F1E66 /* Frameworks */,
 				6E3EE8AF23E6E87C004F1E66 /* Resources */,
+				6E19FDFD23E7627400D8B7AD /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -106,7 +156,6 @@
 			);
 			name = "Top Charts";
 			packageProductDependencies = (
-				6E3EE8D423E6EA25004F1E66 /* Kingfisher */,
 			);
 			productName = "Top Charts";
 			productReference = 6E3EE8B123E6E87C004F1E66 /* Top Charts.app */;
@@ -137,16 +186,45 @@
 			);
 			mainGroup = 6E3EE8A823E6E87C004F1E66;
 			packageReferences = (
-				6E3EE8D323E6EA25004F1E66 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 6E3EE8B223E6E87C004F1E66 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6E19FDF023E7621D00D8B7AD /* Products */;
+					ProjectRef = 6E19FDEF23E7621D00D8B7AD /* Kingfisher.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6E3EE8B023E6E87C004F1E66 /* Top Charts */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6E19FDF623E7621D00D8B7AD /* Kingfisher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Kingfisher.framework;
+			remoteRef = 6E19FDF523E7621D00D8B7AD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6E19FDF823E7621D00D8B7AD /* KingfisherSwiftUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KingfisherSwiftUI.framework;
+			remoteRef = 6E19FDF723E7621D00D8B7AD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6E19FDFA23E7621D00D8B7AD /* KingfisherTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KingfisherTests.xctest;
+			remoteRef = 6E19FDF923E7621D00D8B7AD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6E3EE8AF23E6E87C004F1E66 /* Resources */ = {
@@ -318,6 +396,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Top Charts/Utilities/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,7 +404,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.turkishkit.Top-Charts";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -335,6 +414,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Top Charts/Utilities/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -342,7 +422,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.turkishkit.Top-Charts";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -368,25 +448,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		6E3EE8D323E6EA25004F1E66 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.8.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		6E3EE8D423E6EA25004F1E66 /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6E3EE8D323E6EA25004F1E66 /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6E3EE8A923E6E87C004F1E66 /* Project object */;
 }
