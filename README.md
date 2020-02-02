@@ -1,6 +1,6 @@
 # Adım Adım Kodla
 
-Bir iPhone uygulamasının nasıl hayata geçtiğini öğreneceğin "Adım Adım Kodla" serisi ile her ay birbirinden farklı iPhone uygulamalarında kodlama dünyasını keşfetmeye hazır ol!
+###### Bir iPhone uygulamasının nasıl hayata geçtiğini öğreneceğin "Adım Adım Kodla" serisi ile her ay birbirinden farklı iPhone uygulamalarında kodlama dünyasını keşfetmeye hazır ol!
 
 ![Adım Adım Kodla Cover](images/cover.png)
 
@@ -12,7 +12,7 @@ Adım Adım Kodla, kendi iPhone uygulamasını geliştirmek isteyen kişilerin, 
 
 > **Swift**
 >
-> iOS, Mac, Apple TV ve Apple Watch uygulamaları geliştirmek için Apple tarafından oluşturulmuş güçlü ve kullanıcı dostu bir programlama dili.
+> iOS, Mac, Apple TV ve Apple Watch uygulamaları geliştirmek için Apple tarafından oluşturulmuş güçlü ve kullanıcı dostu bir programlama dili.
 
 &nbsp;
 
@@ -34,12 +34,13 @@ Her ayın ilk haftası TurkishKit sosyal medyalarında yayınlanan projeler ile 
 
 ### Projeler
 
-| Proje Adı&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Açıklama                                                     |
-| :----------------------------------------------------------- | ------------------------------------------------------------ |
-| Top Charts                                                   | Apple Music’te yer alan en popüler şarkıları listeler, seçilen şarkıyı Apple Music uygulamasında görüntüler. |
+| Proje Adı&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Açıklama                                                     | Tarih                        |
+| :----------------------------------------------------------- | :----------------------------------------------------------- | ---------------------------- |
+| Top Charts                                                   | Apple Music’te yer alan en popüler şarkıları listeler, seçilen şarkıyı Apple Music uygulamasında görüntüler. | Şubat 2020&nbsp;&nbsp;&nbsp; |
 
 &nbsp;
 
 &nbsp;
 
 Copyright © 2020 TurkishKit — Tüm Hakları Saklıdır
+
