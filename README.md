@@ -34,7 +34,7 @@ Her ayın ilk haftası TurkishKit sosyal medyalarında yayınlanan projeler ile 
 
 ## Projeler
 
-![Artboard](images/Artboard.png)
+![Artboard](images/top.charts.row.png)
 
 #### Şubat 2020 | Top Charts
 
