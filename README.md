@@ -8,9 +8,7 @@
 Adım Adım Kodla, kendi iPhone uygulamasını geliştirmek isteyen kişilerin, her ay yayımlanan bir projeyi, geliştirme kılavuzundaki adımları takip ederek Swift ile kodlayabilmesini sağlayan bir eğitim serisidir.
 
 *iOS, Mac, Apple TV ve Apple Watch uygulamaları geliştirmek için Apple tarafından oluşturulmuş güçlü ve kullanıcı dostu bir programlama dili.*
-
 &nbsp;
-
 ### Her Ay Yeni Bir Uygulama
 
 Her ayın ilk haftası TurkishKit sosyal medyalarında yayınlanan projeler ile farklı uygulama konseptlerini Swift dilinin büyüleyici dünyasında keşfet. Hemen [takip et](https://twitter.com/turkishkit), yeni projelerden anında haberdar ol! 
