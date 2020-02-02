@@ -10,6 +10,10 @@ Bir iPhone uygulamasının nasıl hayata geçtiğini öğreneceğin "Adım Adım
 
 Adım Adım Kodla, kendi iPhone uygulamasını geliştirmek isteyen kişilerin, her ay yayımlanan bir projeyi, geliştirme kılavuzundaki adımları takip ederek Swift ile kodlayabilmesini sağlayan bir eğitim serisidir.
 
+
+
+> **Swift**
+>
 > iOS, Mac, Apple TV ve Apple Watch uygulamaları geliştirmek için Apple tarafından oluşturulmuş güçlü ve kullanıcı dostu bir programlama dili.
 
 
@@ -30,21 +34,11 @@ Her ayın ilk haftası TurkishKit sosyal medyalarında yayınlanan projeler ile 
 
 
 
-------
-
 ### Projeler
 
-
-
-**Şubat 2020** | Top Charts
-
-Apple Music’te yer alan en popüler şarkıları listeler.
-
-
-
-| Proje Adı  | Açıklama                                               | Tarih      |
-| :--------- | ------------------------------------------------------ | ---------- |
-| Top Charts | Apple Music’te yer alan en popüler şarkıları listeler. | 03.02.2020 |
+| Proje Adı  | Açıklama                                                     | Tarih      |
+| :--------- | ------------------------------------------------------------ | ---------- |
+| Top Charts | Apple Music’te yer alan en popüler şarkıları listeler, seçilen şarkıyı Apple Music uygulamasında görüntüler. | 03.02.2020 |
 
 
 
