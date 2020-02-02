@@ -34,9 +34,9 @@ Her ayın ilk haftası TurkishKit sosyal medyalarında yayınlanan projeler ile 
 
 ### Projeler
 
-| Proje Adı  | Açıklama                                                     | Tarih      |
-| :--------- | ------------------------------------------------------------ | ---------- |
-| Top Charts | Apple Music’te yer alan en popüler şarkıları listeler, seçilen şarkıyı Apple Music uygulamasında görüntüler. | 03.02.2020 |
+| Proje Adı &nbsp;&nbsp;&nbsp; | Açıklama                                                     | Tarih      |
+| :--------------------------- | ------------------------------------------------------------ | ---------- |
+| Top Charts                   | Apple Music’te yer alan en popüler şarkıları listeler, seçilen şarkıyı Apple Music uygulamasında görüntüler. | 03.02.2020 |
 
 
 
