@@ -34,7 +34,7 @@ Her ayın ilk haftası TurkishKit sosyal medyalarında yayınlanan projeler ile 
 
 ## Projeler
 
-![Artboard](/Users/emirhanerdogan/Documents/Xcode/Adim Adim Kodla/images/Artboard.png)
+![Artboard](images/Artboard.png)
 
 #### Şubat 2020 | Top Charts
 
