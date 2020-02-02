@@ -1,7 +1,4 @@
 # Adım Adım Kodla
-
-###### Bir iPhone uygulamasının nasıl hayata geçtiğini öğreneceğin "Adım Adım Kodla" serisi ile her ay birbirinden farklı iPhone uygulamalarında kodlama dünyasını keşfetmeye hazır ol!
-
 ![Adım Adım Kodla Cover](images/cover.png)
 
 &nbsp;
