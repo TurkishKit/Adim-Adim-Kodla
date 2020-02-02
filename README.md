@@ -11,7 +11,7 @@ Adım Adım Kodla, kendi iPhone uygulamasını geliştirmek isteyen kişilerin, 
 
 &nbsp;
 
-## Her Ay Yeni Bir Uygulama
+### Her Ay Yeni Bir Uygulama
 
 Her ayın ilk haftası TurkishKit sosyal medyalarında yayınlanan projeler ile farklı uygulama konseptlerini Swift dilinin büyüleyici dünyasında keşfet. Hemen [takip et](https://twitter.com/turkishkit), yeni projelerden anında haberdar ol! 
 
