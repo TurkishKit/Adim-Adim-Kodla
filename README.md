@@ -6,11 +6,9 @@ Bir iPhone uygulamasının nasıl hayata geçtiğini öğreneceğin "Adım Adım
 
 
 
-#### Adım Adım Kodla Nedir?
+### Adım Adım Kodla Nedir?
 
 Adım Adım Kodla, kendi iPhone uygulamasını geliştirmek isteyen kişilerin, her ay yayımlanan bir projeyi, geliştirme kılavuzundaki adımları takip ederek Swift ile kodlayabilmesini sağlayan bir eğitim serisidir.
-
-
 
 > **Swift**
 >
@@ -26,7 +24,7 @@ Her ayın ilk haftası TurkishKit sosyal medyalarında yayınlanan projeler ile 
 
 
 
-#### Harakete Geç
+### Harakete Geç
 
 1. Bu ayın başlangıç setini [hemen indir](https://google.com).
 2. Geliştirme kılavuzunundaki adımları takip et. Projeni geliştir.
