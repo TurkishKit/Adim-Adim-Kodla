@@ -19,9 +19,9 @@ Her ayın ilk haftası TurkishKit sosyal medyalarında yayınlanan projeler ile 
 
 &nbsp;
 
-### Harakete Geç
+### Harekete Geç
 
-1. Bu ayın başlangıç setini [hemen indir](https://google.com).
+1. Bu repo'yu hemen indir. "Top Charts" klasörüne eriş.
 2. Geliştirme kılavuzunundaki adımları takip et. Projeni geliştir.
 3. Uygulamanı #turkishkit etiketi ile paylaş, sosyal medyalarda sana yer verelim.
 
