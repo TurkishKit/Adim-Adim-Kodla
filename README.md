@@ -29,8 +29,9 @@ Her ayın ilk haftası TurkishKit sosyal medyalarında yayınlanan projeler ile 
 
 ## Projeler
 
-![Project Row 1](images/top.charts.row.png)
-![Project Row 2](images/haberler.row.png)
+![Project Row 1](images/haberler.row.png)
+&nbsp;
+![Project Row 2](images/top.charts.row.png)
 
 &nbsp;
 
