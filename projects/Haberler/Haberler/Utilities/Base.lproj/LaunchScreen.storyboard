@@ -1,43 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dcu-9b-Csm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PxG-Fh-q7I">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="i60-It-6yM">
+        <!--View Controller-->
+        <scene sceneID="Bnq-3K-qPK">
             <objects>
-                <navigationController id="dcu-9b-Csm" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="2gt-ao-1HT">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="nIy-N2-6iC" kind="relationship" relationship="rootViewController" id="ziY-Jw-MNR"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="q59-do-xOn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-126" y="307"/>
-        </scene>
-        <!--Haberler-->
-        <scene sceneID="POs-6r-SS4">
-            <objects>
-                <viewController id="nIy-N2-6iC" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="V99-w3-s9H">
+                <viewController id="PxG-Fh-q7I" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9r1-0W-sqv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© 2020 TurkishKit — Tüm Hakları Saklıdır." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Emf-QM-m5e">
+                                <rect key="frame" x="80.5" y="836" width="253" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Haberler" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5S-dS-TeL">
+                                <rect key="frame" x="134.5" y="426.5" width="145.5" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="95x-sc-XAf"/>
+                        <constraints>
+                            <constraint firstItem="f5S-dS-TeL" firstAttribute="centerY" secondItem="9r1-0W-sqv" secondAttribute="centerY" id="SOY-nb-kpd"/>
+                            <constraint firstItem="Emf-QM-m5e" firstAttribute="centerX" secondItem="9r1-0W-sqv" secondAttribute="centerX" id="es5-es-2Ri"/>
+                            <constraint firstItem="hpm-qM-rgc" firstAttribute="bottom" secondItem="Emf-QM-m5e" secondAttribute="bottom" constant="10" id="hEN-Fo-pbj"/>
+                            <constraint firstItem="f5S-dS-TeL" firstAttribute="centerX" secondItem="9r1-0W-sqv" secondAttribute="centerX" id="vAG-HR-ZXa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hpm-qM-rgc"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Haberler" id="N9G-gO-Uq3"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SB9-95-Teh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GCR-6H-dYq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="681" y="307"/>
+            <point key="canvasLocation" x="1019" y="368"/>
         </scene>
     </scenes>
 </document>
