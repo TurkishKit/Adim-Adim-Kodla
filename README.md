@@ -32,8 +32,9 @@ Her ayın ilk haftası TurkishKit sosyal medyalarında yayınlanan projeler ile 
 ![Project Row 1](images/haberler.row.png)
 &nbsp;
 ![Project Row 2](images/top.charts.row.png)
+&nbsp;
+![Project Row 2](images/su.tabiki.row.png)
 
 &nbsp;
 
 Copyright © 2020 TurkishKit — Tüm Hakları Saklıdır
-
