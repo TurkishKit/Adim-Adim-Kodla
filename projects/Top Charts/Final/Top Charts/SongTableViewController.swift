@@ -16,20 +16,27 @@ class SongTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let song = SongData[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SongCell") as! SongTableViewCell
         
-        cell.albumCoverImageView.setImage(from: song.artworkUrl100)
-        cell.nameLabel.text = song.name
-        cell.artistNameLabel.text = song.artistName
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "SongCell") as? SongTableViewCell {
+            
+            cell.nameLabel.text = song.name
+            cell.artistLabel.text = song.artistName
+            // burada her eriştiğimizde resim yeniden indiriliyor, aslında resim song struct'ının bir parçası olmalı ve ilk decode edildiğinde indirilmeli ve bir değişkende saklanmalı, ama nasıl?
+            cell.albumImageView.image = UIImage(url: song.artworkUrl100)
+            cell.albumImageView.layer.cornerRadius = 5.0
+            return cell
+        }
         
-        return cell
+        return UITableViewCell()
+    }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if let songUrl = URL(string: SongData[indexPath.row].url) {
+            UIApplication.shared.open(songUrl)
+        }
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectedSongUrl = SongData[indexPath.row].url
-        
-        tableView.deselectRow(at: indexPath, animated: true)
-        UIApplication.shared.open(selectedSongUrl)
-    }
 }
