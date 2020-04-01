@@ -21,9 +21,10 @@ Her ayın ilk haftası TurkishKit sosyal medyalarında yayınlanan projeler ile 
 
 ### Harekete Geç
 
-1. Bu repo'yu hemen indir. "Projects" klasöründe bulunan "Haberler" klasörüne eriş.
-2. Geliştirme kılavuzunundaki adımları takip et. Projeni geliştir.
-3. Uygulamanı #turkishkit etiketi ile paylaş, sosyal medyalarda sana yer verelim.
+1. Yukarıda bulunan "Clone or download" butonuna tıkla ve "Download ZIP" ile bu kaynağı edin.
+2. Projects -> Su Takibi -> Başlangıç klasörüne eriş.
+3. Geliştirme kılavuzunundaki adımları takip et. Projeni geliştir.
+4. Uygulamanı #turkishkit etiketi ile paylaş, sosyal medyalarda sana yer verelim.
 
 &nbsp;
 
