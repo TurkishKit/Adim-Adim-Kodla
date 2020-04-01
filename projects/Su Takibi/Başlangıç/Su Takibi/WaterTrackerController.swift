@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  WaterTracker.swift
 //  Water Tracker
 //
 //  Created by Can Balkaya on 3/25/20.
