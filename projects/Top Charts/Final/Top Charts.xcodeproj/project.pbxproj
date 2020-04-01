@@ -3,17 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E3DDF6F23E04AE300F1DF7C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3DDF6E23E04AE300F1DF7C /* Extensions.swift */; };
-		6E3DDF7223E054D800F1DF7C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6E3DDF7123E054D800F1DF7C /* Kingfisher */; };
 		8F1F119B23DFA505009E97C9 /* SongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1F119A23DFA505009E97C9 /* SongTableViewCell.swift */; };
-		8F6416E423DF8ED60073E55E /* SongProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF79FE23DF7C0600F03CF4 /* SongProvider.swift */; };
+		8F6416E423DF8ED60073E55E /* SongData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF79FE23DF7C0600F03CF4 /* SongData.swift */; };
 		8FBF79EB23DF7B7A00F03CF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF79EA23DF7B7A00F03CF4 /* AppDelegate.swift */; };
 		8FBF79ED23DF7B7A00F03CF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF79EC23DF7B7A00F03CF4 /* SceneDelegate.swift */; };
-		8FBF79EF23DF7B7A00F03CF4 /* TopChartsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF79EE23DF7B7A00F03CF4 /* TopChartsTableViewController.swift */; };
+		8FBF79EF23DF7B7A00F03CF4 /* SongTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF79EE23DF7B7A00F03CF4 /* SongTableViewController.swift */; };
 		8FBF79F223DF7B7A00F03CF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FBF79F023DF7B7A00F03CF4 /* Main.storyboard */; };
 		8FBF79F423DF7B7F00F03CF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FBF79F323DF7B7F00F03CF4 /* Assets.xcassets */; };
 		8FBF79F723DF7B7F00F03CF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FBF79F523DF7B7F00F03CF4 /* LaunchScreen.storyboard */; };
@@ -21,17 +19,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6E3DDF6E23E04AE300F1DF7C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		8F1F119A23DFA505009E97C9 /* SongTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongTableViewCell.swift; sourceTree = "<group>"; };
 		8FBF79E723DF7B7A00F03CF4 /* Top Charts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Top Charts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FBF79EA23DF7B7A00F03CF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FBF79EC23DF7B7A00F03CF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8FBF79EE23DF7B7A00F03CF4 /* TopChartsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopChartsTableViewController.swift; sourceTree = "<group>"; };
+		8FBF79EE23DF7B7A00F03CF4 /* SongTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongTableViewController.swift; sourceTree = "<group>"; };
 		8FBF79F123DF7B7A00F03CF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8FBF79F323DF7B7F00F03CF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FBF79F623DF7B7F00F03CF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FBF79F823DF7B7F00F03CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8FBF79FE23DF7C0600F03CF4 /* SongProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongProvider.swift; sourceTree = "<group>"; };
+		8FBF79FE23DF7C0600F03CF4 /* SongData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongData.swift; sourceTree = "<group>"; };
 		8FBF7A0123DF879D00F03CF4 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -40,7 +37,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E3DDF7223E054D800F1DF7C /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,10 +62,10 @@
 		8FBF79E923DF7B7A00F03CF4 /* Top Charts */ = {
 			isa = PBXGroup;
 			children = (
-				8FBF79F023DF7B7A00F03CF4 /* Main.storyboard */,
 				8FBF7A0123DF879D00F03CF4 /* Song.swift */,
+				8FBF79F023DF7B7A00F03CF4 /* Main.storyboard */,
 				8F1F119A23DFA505009E97C9 /* SongTableViewCell.swift */,
-				8FBF79EE23DF7B7A00F03CF4 /* TopChartsTableViewController.swift */,
+				8FBF79EE23DF7B7A00F03CF4 /* SongTableViewController.swift */,
 				8FBF7A0023DF7C4800F03CF4 /* Utilities */,
 			);
 			path = "Top Charts";
@@ -79,12 +75,11 @@
 			isa = PBXGroup;
 			children = (
 				8FBF79F823DF7B7F00F03CF4 /* Info.plist */,
-				8FBF79FE23DF7C0600F03CF4 /* SongProvider.swift */,
+				8FBF79FE23DF7C0600F03CF4 /* SongData.swift */,
 				8FBF79EA23DF7B7A00F03CF4 /* AppDelegate.swift */,
 				8FBF79EC23DF7B7A00F03CF4 /* SceneDelegate.swift */,
 				8FBF79F523DF7B7F00F03CF4 /* LaunchScreen.storyboard */,
 				8FBF79F323DF7B7F00F03CF4 /* Assets.xcassets */,
-				6E3DDF6E23E04AE300F1DF7C /* Extensions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -105,9 +100,6 @@
 			dependencies = (
 			);
 			name = "Top Charts";
-			packageProductDependencies = (
-				6E3DDF7123E054D800F1DF7C /* Kingfisher */,
-			);
 			productName = "Top Charts";
 			productReference = 8FBF79E723DF7B7A00F03CF4 /* Top Charts.app */;
 			productType = "com.apple.product-type.application";
@@ -136,9 +128,6 @@
 				Base,
 			);
 			mainGroup = 8FBF79DE23DF7B7900F03CF4;
-			packageReferences = (
-				6E3DDF7023E054D700F1DF7C /* XCRemoteSwiftPackageReference "Kingfisher" */,
-			);
 			productRefGroup = 8FBF79E823DF7B7A00F03CF4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -167,10 +156,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F1F119B23DFA505009E97C9 /* SongTableViewCell.swift in Sources */,
-				8F6416E423DF8ED60073E55E /* SongProvider.swift in Sources */,
-				8FBF79EF23DF7B7A00F03CF4 /* TopChartsTableViewController.swift in Sources */,
+				8F6416E423DF8ED60073E55E /* SongData.swift in Sources */,
+				8FBF79EF23DF7B7A00F03CF4 /* SongTableViewController.swift in Sources */,
 				8FBF79EB23DF7B7A00F03CF4 /* AppDelegate.swift in Sources */,
-				6E3DDF6F23E04AE300F1DF7C /* Extensions.swift in Sources */,
 				8FBF79ED23DF7B7A00F03CF4 /* SceneDelegate.swift in Sources */,
 				8FBF7A0223DF879D00F03CF4 /* Song.swift in Sources */,
 			);
@@ -325,10 +313,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.TurkishKit.Top-Charts-Final";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TurkishKit.Top-Charts";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -345,10 +333,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.TurkishKit.Top-Charts-Final";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TurkishKit.Top-Charts";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -374,25 +362,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		6E3DDF7023E054D700F1DF7C /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.13.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		6E3DDF7123E054D800F1DF7C /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6E3DDF7023E054D700F1DF7C /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8FBF79DF23DF7B7900F03CF4 /* Project object */;
 }
