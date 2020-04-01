@@ -3,7 +3,7 @@
 //  Water Tracker
 //
 //  Created by Can Balkaya on 3/27/20.
-//  Copyright © 2020 Can Balkaya. All rights reserved.
+//  Copyright © 2020 TurkishKit. All rights reserved.
 //
 
 import Foundation

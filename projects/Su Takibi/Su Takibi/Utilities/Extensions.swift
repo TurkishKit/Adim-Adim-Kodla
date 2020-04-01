@@ -3,7 +3,7 @@
 //  Su Takibi
 //
 //  Created by Emirhan Erdogan on 28.03.2020.
-//  Copyright © 2020 Can Balkaya. All rights reserved.
+//  Copyright © 2020 TurkishKit. All rights reserved.
 //
 
 import UIKit
