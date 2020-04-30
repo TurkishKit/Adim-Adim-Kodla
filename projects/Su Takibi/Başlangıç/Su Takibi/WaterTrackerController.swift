@@ -20,6 +20,4 @@ class WaterTrackerController: UIViewController {
     }
     
     // MARK: - Functions
-    
-    // MARK: - Actions
 }
