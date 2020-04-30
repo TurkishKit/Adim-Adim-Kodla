@@ -19,5 +19,5 @@ class WaterTrackerController: UIViewController {
         super.viewDidLoad()
     }
     
-    // MARK: - Functions
+    // MARK: - Actions
 }
