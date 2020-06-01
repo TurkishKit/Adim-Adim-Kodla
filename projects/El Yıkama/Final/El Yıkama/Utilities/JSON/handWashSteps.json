@@ -1,0 +1,74 @@
+[
+    {
+        "index": 1,
+        "title": "Ellerini Yıka",
+        "description": "Ellerinizi yıkamadan önce yüzük veya bilezikleri çıkarın.",
+        "imageName": "handWashStep.1"
+    },
+    {
+        "index": 2,
+        "title": "Sabun Kullanın",
+        "description": "Ellerinizdeki kirlerin ortadan kalkması için sabun çok önemlidir.",
+        "imageName": "handWashStep.2"
+    },
+    {
+        "index": 3,
+        "title": "Açuç İçi",
+        "description": "Avuç içlerinizi iyice avuşturarak yıkayın.",
+        "imageName": "handWashStep.3"
+    },
+    {
+        "index": 4,
+        "title": "Parmaklar",
+        "description": "Parmaklarınızın aralarını ovalayın.",
+        "imageName": "handWashStep.4"
+    },
+    {
+        "index": 5,
+        "title": "Ellerin Arkası",
+        "description": "Ellerinizin arkasını ve parmak aralarınızı ovalayın.",
+        "imageName": "handWashStep.5"
+    },
+    {
+        "index": 6,
+        "title": "Baş Parmağı",
+        "description": "Baş parmağınızı iyice ovalayın.",
+        "imageName": "handWashStep.6"
+    },
+    {
+        "index": 7,
+        "title": "Avuç İçlerini Yıka",
+        "description": "Parmaklarının yanı sıra, avuç içerlinizi sabunlayın.",
+        "imageName": "handWashStep.7"
+    },
+    {
+        "index": 8,
+        "title": "Bileklerini Yıka",
+        "description": "Durulamadan önce bileklerinizi sabunlayın.",
+        "imageName": "handWashStep.8"
+    },
+    {
+        "index": 9,
+        "title": "Durulama",
+        "description": "Ellerinde sabun kalmaması için ellerini durula.",
+        "imageName": "handWashStep.9"
+    },
+    {
+        "index": 10,
+        "title": "Kurulama",
+        "description": "Ellerinin ıslak kalmaması için ellerini kurula.",
+        "imageName": "handWashStep.10"
+    },
+    {
+        "index": 11,
+        "title": "Musluğu Sil",
+        "description": "Daha sonra da temiz bir şekilde elini yıkamak için musluğu sil.",
+        "imageName": "handWashStep.11"
+    },
+    {
+        "index": 12,
+        "title": "Tebrikler",
+        "description": "Artık ellerin gerçekten temizlendi.",
+        "imageName": "handWashStep.12"
+    }
+]

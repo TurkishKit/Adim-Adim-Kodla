@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Ellerinizi Düzenli Olarak Yıkayın",
+        "description": "Nesnelerle en çok temas ettiğimiz organlarımız ellerimizdir. Ellerimizle birçok farklı mikrop ve virüs ile etkileşime geçeriz. Bu yüzden ellerinizi sık sık ve düzgünce yıkamalısınız."
+    },
+    {
+        "title": "Ellerinizi Yüzünüze Götürmeyin",
+        "description": "Ellerimizin temizliği kadar, ellerimizi yüzümüze götürmememiz de bir o kadar önemlidir. Sonuçta ellerimiz, her halükarda bir bakteri ve virüs yuvası olacaktır. Bu yüzden, COVID-19 gibi virüslerden korunmak için elinizi yüzünüze ve ağzınıza götürmemelisiniz."
+    },
+    {
+        "title": "Bireysel Kalkanlama Yapın",
+        "description": "COVID-19'un yayılmasındaki en büyük etkenlerden biri de yakın temastır. Yakın teması önlemek için insanlar ile tokalaşma, sarılma gibi hareketlerden kaçının."
+    },
+    {
+        "title": "Mümkün Olduğunca Dışarı Çıkmayın",
+        "description": "Salgının ilerlemesini durdurmadaki en önemli faktörlerden biri de evden çıkmamaktır. Siz hasta olmasanız bile taşıyıcı olabilirsiniz ya da taşıyıcı olmasanız bile dışarı çıktığınız durumda COVID-19 hastalığına yakalanmamız evde kalmaktan çok daha fazladır."
+    },
+    {
+        "title": "Yaşça Büyük Aile Bireylerinize Destek Olun",
+        "description": "Bu süreçten en çok etkilenen kitle belki de yaşlılardır, sonuçta en büyük risk altında olan kişiler onlardır. O yüzden, ailenizdeki yaşça büyük aile bireylerinize olabildiğince destek olun. Ayrıca, onları korumak adına mümkünse onlar ile fiziksel temastan olabildiğince kaçının."
+    },
+    {
+        "title": "Güvenilir Olmayan Bilgilerden Kaçının",
+        "description": "Virüsün kendisi kadar, virüs ile alakalı yanlış veya çarpıtılmış bilgi veren içerikler de tehlikelidir. Virüsten korunmak konusunda edindiğiniz bilgilerin doğruluğundan emin olun ve doğruluğundan emin olmadığınız içerikleri paylaşmayın."
+    },
+    {
+        "title": "Vücudunuzu Zinde Tutun",
+        "description": "COVID-19 ve diğer hastalıklarından korunmak için yapmanız gereken en önemli şeylerden biri de vücudunuzu zinde tutmaktır. Bunun için sağlıklı beslenip, ev içerisinde spor aktiviteler yapabilirsiniz."
+    }
+]
