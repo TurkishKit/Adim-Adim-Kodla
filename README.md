@@ -32,7 +32,7 @@ Her ayın ilk haftası TurkishKit sosyal medyalarında yayınlanan projeler ile 
 
 ![Project Row 1](images/el.yikama.row.png)
 &nbsp;
-![Project Row 2](images/su.tabiki.row.pn)
+![Project Row 2](images/su.tabiki.row.png)
 &nbsp;
 ![Project Row 3](images/haberler.row.png)
 &nbsp;
