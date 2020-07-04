@@ -24,11 +24,7 @@ extension UIView {
 extension UIColor {
     
     // MARK: - Properties
-    static var tagColorOn: UIColor {
-        return UIColor(named: #function)!
-    }
-    
-    static var descriptionColor: UIColor {
+    static var orange: UIColor {
         return UIColor(named: #function)!
     }
 }

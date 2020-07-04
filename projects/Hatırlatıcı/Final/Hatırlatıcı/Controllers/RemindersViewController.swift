@@ -30,34 +30,33 @@ class RemindersViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let currentReminder = reminderManager.getAllReminders()[indexPath.row]
-        let title = currentReminder.isCompleted ? NSLocalizedString("Uncomplete", comment: "Uncomplete") : NSLocalizedString("Complete", comment: "Complete")
+        let selectedReminder = reminderManager.getAllReminders()[indexPath.row]
         
-        let action = UIContextualAction(style: .normal, title: title, handler: { (action, view, completionHandler) in
-            self.reminderManager.setComplete(reminder: currentReminder)
+        let completeAction = UIContextualAction(style: .normal, title: nil, handler: { (_, _, completion) in
+            completion(true)
             
-            // Hatırlatıcı tamamlandırıldıktan 0.8 saniye sonra tamamlandırıldığını göstermesi için aşağıdaki kodu yazdık.
+            self.reminderManager.setComplete(reminder: selectedReminder)
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
-                self.tableView.reloadData()
+                self.tableView.reloadRows(at: [indexPath], with: .automatic)
             }
-            
-            completionHandler(true)
         })
-
-        action.image = currentReminder.isCompleted ? UIImage(systemName: "checkmark.circle.fill") : UIImage(systemName: "checkmark.circle")
-        action.backgroundColor = currentReminder.isCompleted ? .lightGray : .tagColorOn
         
-        return UISwipeActionsConfiguration(actions: [action])
+        completeAction.image = selectedReminder.isCompleted ? UIImage(systemName: "minus.circle.fill") : UIImage(systemName: "checkmark.circle.fill")
+        completeAction.backgroundColor = selectedReminder.isCompleted ? .lightGray : .orange
+        
+        return UISwipeActionsConfiguration(actions: [completeAction])
     }
     
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let reminderToDelete = reminderManager.getAllReminders()[indexPath.row]
         
-        // "editingStyle" değerinin "delete" olması durumunda aşağıdaki kodları çalıştırıyoruz.
-        guard editingStyle == .delete else { return }
-        let reminder = reminderManager.getAllReminders()[indexPath.row]
+        let deleteAction = UIContextualAction(style: .destructive, title: "Sil") { (_, _, completed) in
+            completed(true)
+            self.reminderManager.delete(reminder: reminderToDelete)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
         
-        reminderManager.delete(reminder: reminder)
-        tableView.deleteRows(at: [indexPath], with: .fade)
+        return UISwipeActionsConfiguration(actions: [deleteAction])
     }
     
     // MARK: - Actions
@@ -65,7 +64,8 @@ class RemindersViewController: UITableViewController {
         
         // TableView objesine yeni bir eleman geldiğini kullanıcıya göstermek için birinci ekrana döndükten 0.5 saniye sonra elemanın eklendiğini kullanıcıya gösteriyoruz.
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            self.tableView.reloadData()
+            let newIndexPath = IndexPath(row: 0, section: 0)
+            self.tableView.insertRows(at: [newIndexPath], with: .automatic)
         }
     }
 }

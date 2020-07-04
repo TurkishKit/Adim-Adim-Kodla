@@ -12,24 +12,18 @@ class AddReminderViewController: UITableViewController {
     
     // MARK: - UI Elements
     @IBOutlet weak var titleTextField: UITextField!
+    @IBOutlet weak var remindMeSwitch: UISwitch!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var datePicker: UIDatePicker!
-    @IBOutlet weak var addButton: UIBarButtonItem!
+    @IBOutlet weak var addBarButton: UIBarButtonItem!
     
     // MARK: - Properties
-    let dateLabelCellIndexPath = IndexPath(row: 0, section: 1)
-    let datePickerCellIndexPath = IndexPath(row: 1, section: 1)
+    let dateLabelCellIndexPath = IndexPath(row: 1, section: 1)
+    let datePickerCellIndexPath = IndexPath(row: 2, section: 1)
+    
     var reminder: ReminderItem?
-    
     let remindersManager = ReminderManager()
-    
-    var isDatePickerShown: Bool = false {
-        didSet {
-            
-            // DatePicker objesinin gizli olup olmayacağını "isDatePickerShown" değerine göre belirliyoruz.
-            datePicker.isHidden = !isDatePickerShown
-        }
-    }
+    var isDatePickerShown = false
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -42,13 +36,27 @@ class AddReminderViewController: UITableViewController {
         updateDateViews()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Sayfa ekrana gelmek üzereyken klavyenin açılmasını sağlar.
+        titleTextField.becomeFirstResponder()
+    }
+    
     // MARK: - Functions
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
-        // DatePicker elemanının içerisinde bulunduğu Cell objesi gözüktüğü zaman DatePicker objesinin de gözükmesi için aşağıdaki kodlar ile Cell objesinin boyu ile oynuyoruz.
+        // DatePicker elemanının içerisinde bulunduğu Cell objesi gözüktüğü zaman DatePicker
+        // objesinin de gözükmesi için aşağıdaki kodlar ile Cell objesinin boyu ile oynuyoruz.
         switch indexPath {
+        case dateLabelCellIndexPath:
+            if remindMeSwitch.isOn {
+                return 44
+            } else {
+                return 0
+            }
+            
         case datePickerCellIndexPath:
-            if isDatePickerShown {
+            if isDatePickerShown && remindMeSwitch.isOn {
                 return 216
             } else {
                 return 0
@@ -62,19 +70,9 @@ class AddReminderViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        switch indexPath {
-        case dateLabelCellIndexPath:
-            if isDatePickerShown {
-                isDatePickerShown = false
-            } else {
-                isDatePickerShown = true
-            }
-            
-            // Cell objesine tıklandığında oluşan aksiyonların, güncellemeleri göstermek için aşağıdaki kodları yazdık.
-            tableView.beginUpdates()
-            tableView.endUpdates()
-        default:
-            break
+        if indexPath == dateLabelCellIndexPath {
+            isDatePickerShown.toggle()
+            updateCells()
         }
     }
     
@@ -87,17 +85,36 @@ class AddReminderViewController: UITableViewController {
         dateLabel.text = dateFormatter.string(from: datePicker.date)
     }
     
+    func updateCells() {
+        tableView.beginUpdates()
+        tableView.endUpdates()
+    }
+    
     // MARK: - Actions
     @IBAction func datePickerValueChanged(_ sender: UIDatePicker) {
         updateDateViews()
     }
     
-    @IBAction func cancelButton(_ sender: UIBarButtonItem) {
+    @IBAction func remindMeSwitchValueChanged(_ sender: UISwitch) {
+        if !sender.isOn {
+            isDatePickerShown = false
+        }
+        
+        updateCells()
+    }
+    
+    @IBAction func cancelBarButtonTapped(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
     }
     
     @IBAction func addBarButtonTapped(_ sender: UIBarButtonItem) {
-        let newReminder = ReminderItem(title: titleTextField.text!, dueDate: datePicker.date)
+        var dueDate: Date?
+        
+        if remindMeSwitch.isOn {
+            dueDate = datePicker.date
+        }
+        
+        let newReminder = ReminderItem(title: titleTextField.text!, dueDate: dueDate)
         
         remindersManager.create(reminder: newReminder)
         performSegue(withIdentifier: "unwindToReminders", sender: nil)
@@ -105,11 +122,12 @@ class AddReminderViewController: UITableViewController {
 }
 
 extension AddReminderViewController: UITextFieldDelegate {
+    
     func textFieldDidChangeSelection(_ textField: UITextField) {
         if titleTextField.text != "" {
-            addButton.isEnabled = true
+            addBarButton.isEnabled = true
         } else {
-            addButton.isEnabled = false
+            addBarButton.isEnabled = false
         }
     }
 }

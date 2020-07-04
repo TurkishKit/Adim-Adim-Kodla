@@ -17,13 +17,18 @@ class ReminderTableViewCell: UITableViewCell {
     
     // MARK: - Functions
     func prepare(with reminder: ReminderItem) {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .medium
-        dateFormatter.timeStyle = .short
-        dateFormatter.locale = Locale(identifier: "tr")
-        
         titleLabel.text = reminder.title
-        dateLabel.text = dateFormatter.string(from: reminder.dueDate)
-        tagView.backgroundColor = reminder.isCompleted ? .tagColorOn : .lightGray
+        tagView.backgroundColor = reminder.isCompleted ? .orange : .lightGray
+        
+        if let dueDate = reminder.dueDate {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateStyle = .medium
+            dateFormatter.timeStyle = .short
+            dateFormatter.locale = Locale(identifier: "tr")
+            
+            dateLabel.text = dateFormatter.string(from: dueDate)
+        } else {
+            dateLabel.text = nil
+        }
     }
 }

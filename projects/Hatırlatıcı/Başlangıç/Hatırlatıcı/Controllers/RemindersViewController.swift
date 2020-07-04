@@ -8,6 +8,11 @@
 
 import UIKit
 
-class RemindersViewController: UIViewController {
+class RemindersViewController: UITableViewController {
     
+    // MARK: - Properties
+    
+    // MARK: - Functions
+    
+    // MARK: - Actions
 }

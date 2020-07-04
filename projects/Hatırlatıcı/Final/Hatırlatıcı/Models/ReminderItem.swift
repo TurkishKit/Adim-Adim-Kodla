@@ -13,6 +13,6 @@ struct ReminderItem: Codable {
     // MARK: - Properties
     var id = UUID().uuidString
     var title: String
-    var dueDate: Date
+    var dueDate: Date?
     var isCompleted = false
 }

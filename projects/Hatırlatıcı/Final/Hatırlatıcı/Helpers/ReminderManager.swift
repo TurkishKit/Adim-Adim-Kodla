@@ -55,7 +55,10 @@ class ReminderManager {
         
         // Yeni oluşturduğumuz elemanı TableView elemanının en üstünde yerleştirmek için "insert" fonksiyonunu kullanıyoruz.
         allReminders.insert(reminder, at: 0)
-        NotificationProvider.scheduleNotification(title: reminder.title, date: reminder.dueDate, id: reminder.id)
+        
+        if let dueDate = reminder.dueDate {
+            NotificationProvider.scheduleNotification(title: reminder.title, date: dueDate, id: reminder.id)
+        }
     }
     
     func setComplete(reminder: ReminderItem) {
