@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ywQ-IQ-V0e">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hatırlatıcı-->
+        <scene sceneID="3bC-Si-l9n">
+            <objects>
+                <tableViewController id="eBg-68-fah" customClass="RemindersViewController" customModule="Hatırlatıcı" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6Jp-ey-ayl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="eBg-68-fah" id="Yiz-jm-MNS"/>
+                            <outlet property="delegate" destination="eBg-68-fah" id="zgB-In-W8s"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Hatırlatıcı" id="Z7h-dP-XYg"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ehz-10-f17" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="195.6521739130435" y="912.72321428571422"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DMu-75-FFU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ywQ-IQ-V0e" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="y3z-RL-Yn5">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eBg-68-fah" kind="relationship" relationship="rootViewController" id="qJD-ld-mYZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m3v-nN-wNO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-714.49275362318849" y="912.72321428571422"/>
+        </scene>
+    </scenes>
+</document>
