@@ -22,7 +22,7 @@ Her ayın ilk haftası TurkishKit sosyal medyalarında yayınlanan projeler ile 
 ### Harekete Geç
 
 1. Yukarıda bulunan "Clone or download" butonuna tıkla ve "Download ZIP" ile bu kaynağı edin.
-2. Projects -> El Yıkama -> Başlangıç klasörüne eriş.
+2. Projects -> Hatırlatıcı -> Başlangıç klasörüne eriş.
 3. Geliştirme kılavuzunundaki adımları takip et. Projeni geliştir.
 4. Uygulamanı #turkishkit etiketi ile paylaş, sosyal medyalarda sana yer verelim.
 
@@ -30,13 +30,15 @@ Her ayın ilk haftası TurkishKit sosyal medyalarında yayınlanan projeler ile 
 
 ## Projeler
 
-![Project Row 1](images/el.yikama.row.png)
+![Project Row 1](images/hatırlatıcı.row.png)
 &nbsp;
-![Project Row 2](images/su.tabiki.row.png)
+![Project Row 2](images/el.yikama.row.png)
 &nbsp;
-![Project Row 3](images/haberler.row.png)
+![Project Row 3](images/su.tabiki.row.png)
 &nbsp;
-![Project Row 4](images/top.charts.row.png)
+![Project Row 4](images/haberler.row.png)
+&nbsp;
+![Project Row 5](images/top.charts.row.png)
 
 &nbsp;
 
