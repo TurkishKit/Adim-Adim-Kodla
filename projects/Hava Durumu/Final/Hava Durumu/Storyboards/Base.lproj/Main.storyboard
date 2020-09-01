@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BTs-nz-rOo">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Weather Page View Controller-->
+        <scene sceneID="I9X-kY-XIP">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="37l-d4-wd1" customClass="WeatherPageViewController" customModule="Hava_Durumu" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="XB2-ce-Tt5">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="kNi-Kv-EIc">
+                            <rect key="frame" x="139.5" y="5.5" width="135" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Günlük"/>
+                                <segment title="Haftalık"/>
+                            </segments>
+                            <connections>
+                                <action selector="segmentedControlValueChanged:" destination="37l-d4-wd1" eventType="valueChanged" id="VUn-fb-Y9y"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="segmentedControl" destination="kNi-Kv-EIc" id="chF-gD-940"/>
+                    </connections>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wgW-7t-32M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="926" y="138"/>
+        </scene>
+        <!--Daily View Controller-->
+        <scene sceneID="RS3-MA-Xs9">
+            <objects>
+                <viewController storyboardIdentifier="DailyViewController" id="ccq-wF-im0" customClass="DailyViewController" customModule="Hava_Durumu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BW5-ZH-7oV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28º" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVs-qk-pRC">
+                                <rect key="frame" x="153" y="174" width="108.5" height="84"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="70"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="qmy-2K-CPN">
+                                <rect key="frame" x="86.5" y="94" width="241" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="c02d" translatesAutoresizingMaskIntoConstraints="NO" id="0wQ-1S-gJX">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="5CW-BP-MTk"/>
+                                            <constraint firstAttribute="height" constant="50" id="CXG-86-fBe"/>
+                                        </constraints>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                        </preferredSymbolConfiguration>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Ikm-Od-glm">
+                                        <rect key="frame" x="67" y="0.0" width="174" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bugün" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rug-5v-qwy">
+                                                <rect key="frame" x="0.0" y="0.0" width="71" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="3 Ağustos, Cumartesi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pfr-ea-zev">
+                                                <rect key="frame" x="0.0" y="31" width="174" height="19"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dOe-KJ-eUF">
+                                <rect key="frame" x="120" y="261" width="174" height="24"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şehir" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9up-ma-AGn">
+                                        <rect key="frame" x="0.0" y="0.0" width="45" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hava Durumu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xc-bq-Uul">
+                                        <rect key="frame" x="55" y="0.0" width="119" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FAA-g0-JCy">
+                                <rect key="frame" x="20" y="335" width="374" height="243"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="lgV-OA-Jwe">
+                                        <rect key="frame" x="20" y="30" width="334" height="183"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="T6l-vv-US0">
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="41"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ifO-53-9Sp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="163" height="41"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thermometer.sun" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0Zr-I0-Axs">
+                                                                <rect key="frame" x="0.0" y="-3.5" width="21.5" height="45.5"/>
+                                                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                                </preferredSymbolConfiguration>
+                                                            </imageView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="n5m-YG-Fc4">
+                                                                <rect key="frame" x="31.5" y="0.0" width="131.5" height="41"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="-º" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVH-FQ-mjX">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="16" height="24.5"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EN YÜKSEK S." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxd-Ob-F2P">
+                                                                        <rect key="frame" x="0.0" y="26.5" width="81.5" height="14.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bhd-FU-Pv7">
+                                                        <rect key="frame" x="171" y="0.0" width="163" height="41"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thermometer.snowflake" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="WzX-1e-Nt5">
+                                                                <rect key="frame" x="0.0" y="-0.5" width="20" height="42.5"/>
+                                                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                                </preferredSymbolConfiguration>
+                                                            </imageView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pBR-0P-bPV">
+                                                                <rect key="frame" x="30" y="0.0" width="133" height="41"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-º" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gty-p0-AXD">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="16" height="21.5"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EN DÜŞÜK S." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82D-2I-Hcw">
+                                                                        <rect key="frame" x="0.0" y="26.5" width="76.5" height="14.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="cJO-Xs-hbh">
+                                                <rect key="frame" x="0.0" y="71" width="334" height="41"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lQO-RT-0rB">
+                                                        <rect key="frame" x="0.0" y="0.0" width="163" height="41"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="HpJ-X4-ulc">
+                                                                <rect key="frame" x="0.0" y="0.0" width="21" height="41"/>
+                                                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                                </preferredSymbolConfiguration>
+                                                            </imageView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Sqb-pO-geE">
+                                                                <rect key="frame" x="31" y="0.0" width="132" height="41"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMu-xR-2F1">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="8.5" height="24.5"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RÜZGAR YÖNÜ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOW-1s-P5v">
+                                                                        <rect key="frame" x="0.0" y="26.5" width="87" height="14.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gMb-tM-4nf">
+                                                        <rect key="frame" x="171" y="0.0" width="163" height="41"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wind" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="BsE-AP-rSe">
+                                                                <rect key="frame" x="0.0" y="1.5" width="21.5" height="39"/>
+                                                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                                </preferredSymbolConfiguration>
+                                                            </imageView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="vAd-mL-Fi1">
+                                                                <rect key="frame" x="31.5" y="0.0" width="131.5" height="41"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- km/sa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZY-Df-iU9">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="66" height="21.5"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RÜZGAR HIZI" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hO-aL-EAQ">
+                                                                        <rect key="frame" x="0.0" y="26.5" width="76" height="14.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="VwO-by-KX5">
+                                                <rect key="frame" x="0.0" y="142" width="334" height="41"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MPg-87-T8k">
+                                                        <rect key="frame" x="0.0" y="0.0" width="163" height="41"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun.max.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="BBY-zB-Hvc">
+                                                                <rect key="frame" x="0.0" y="-1" width="23" height="43"/>
+                                                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                                </preferredSymbolConfiguration>
+                                                            </imageView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Jlm-jJ-Id7">
+                                                                <rect key="frame" x="33" y="0.0" width="130" height="41"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2Z-6c-tbo">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="8.5" height="24.5"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UV İNDEKSİ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9OH-s2-7Bg">
+                                                                        <rect key="frame" x="0.0" y="26.5" width="67" height="14.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1qH-Le-kBf">
+                                                        <rect key="frame" x="171" y="0.0" width="163" height="41"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thermometer" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FKH-U2-M6E">
+                                                                <rect key="frame" x="0.0" y="-0.5" width="15.5" height="42.5"/>
+                                                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                                </preferredSymbolConfiguration>
+                                                            </imageView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1mN-oP-27l">
+                                                                <rect key="frame" x="25.5" y="0.0" width="137.5" height="41"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHi-vC-SvR">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="24" height="21.5"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GÖRECELİ NEM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="es4-tR-pOD">
+                                                                        <rect key="frame" x="0.0" y="26.5" width="89" height="14.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="lgV-OA-Jwe" secondAttribute="trailing" constant="20" id="Ndp-Sz-KUp"/>
+                                    <constraint firstAttribute="bottom" secondItem="lgV-OA-Jwe" secondAttribute="bottom" constant="30" id="YIT-MU-uoa"/>
+                                    <constraint firstItem="lgV-OA-Jwe" firstAttribute="top" secondItem="FAA-g0-JCy" secondAttribute="top" constant="30" id="cOO-Fc-S78"/>
+                                    <constraint firstItem="lgV-OA-Jwe" firstAttribute="leading" secondItem="FAA-g0-JCy" secondAttribute="leading" constant="20" id="fXs-Jv-OMh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="FAA-g0-JCy" firstAttribute="top" secondItem="dOe-KJ-eUF" secondAttribute="bottom" constant="50" id="0bv-Gj-t1J"/>
+                            <constraint firstItem="dOe-KJ-eUF" firstAttribute="centerX" secondItem="BW5-ZH-7oV" secondAttribute="centerX" id="4G8-p1-sB3"/>
+                            <constraint firstItem="FAA-g0-JCy" firstAttribute="leading" secondItem="k6J-5X-bOY" secondAttribute="leading" constant="20" id="4Xi-4t-7LB"/>
+                            <constraint firstItem="MVs-qk-pRC" firstAttribute="top" secondItem="qmy-2K-CPN" secondAttribute="bottom" constant="30" id="Acg-Xr-Aje"/>
+                            <constraint firstItem="qmy-2K-CPN" firstAttribute="centerX" secondItem="BW5-ZH-7oV" secondAttribute="centerX" id="IBw-Dl-iTz"/>
+                            <constraint firstItem="dOe-KJ-eUF" firstAttribute="top" secondItem="MVs-qk-pRC" secondAttribute="bottom" constant="3" id="QQ2-80-bg9"/>
+                            <constraint firstItem="k6J-5X-bOY" firstAttribute="trailing" secondItem="FAA-g0-JCy" secondAttribute="trailing" constant="20" id="TDl-H1-nQj"/>
+                            <constraint firstItem="qmy-2K-CPN" firstAttribute="top" secondItem="k6J-5X-bOY" secondAttribute="top" constant="50" id="WnG-CJ-nho"/>
+                            <constraint firstItem="MVs-qk-pRC" firstAttribute="centerX" secondItem="BW5-ZH-7oV" secondAttribute="centerX" id="hfQ-HU-ml0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="k6J-5X-bOY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cityNameLabel" destination="9up-ma-AGn" id="UVG-p9-wAz"/>
+                        <outlet property="dateLabel" destination="Pfr-ea-zev" id="bmt-Am-WKS"/>
+                        <outlet property="humidityLabel" destination="cHi-vC-SvR" id="pXJ-im-caP"/>
+                        <outlet property="maximumTemperatureLabel" destination="YVH-FQ-mjX" id="YWd-aW-EtT"/>
+                        <outlet property="minimumTemperatureLabel" destination="gty-p0-AXD" id="xQa-t0-Swm"/>
+                        <outlet property="temperatureLabel" destination="MVs-qk-pRC" id="Wew-wQ-9F9"/>
+                        <outlet property="uvIndexLabel" destination="S2Z-6c-tbo" id="ZM6-Ir-D54"/>
+                        <outlet property="weatherIconImageView" destination="0wQ-1S-gJX" id="biE-Og-p5d"/>
+                        <outlet property="weatherStatusLabel" destination="9xc-bq-Uul" id="njp-N4-Dxc"/>
+                        <outlet property="windDirectionLabel" destination="JMu-xR-2F1" id="riG-Mu-wwz"/>
+                        <outlet property="windSpeedLabel" destination="LZY-Df-iU9" id="q5o-U9-ny9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kAD-Ay-ITD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1700.0000000000002" y="137.94642857142856"/>
+        </scene>
+        <!--Weekly View Controller-->
+        <scene sceneID="1Lt-Iy-hLU">
+            <objects>
+                <tableViewController storyboardIdentifier="WeeklyViewController" id="4Ea-9V-FP0" customClass="WeeklyViewController" customModule="Hava_Durumu" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" id="sGW-VE-ljh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DayWeatherCell" rowHeight="50" id="oYp-W3-qym" customClass="DayWeatherTableViewCell" customModule="Hava_Durumu" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oYp-W3-qym" id="k9J-zG-wtS">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wya-fl-UOU">
+                                            <rect key="frame" x="20" y="11" width="164.5" height="28"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud.sun.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Tie-4w-qQ2">
+                                            <rect key="frame" x="194.5" y="10.5" width="25" height="24.5"/>
+                                            <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="25" id="0Na-TW-8Zp"/>
+                                                <constraint firstAttribute="width" constant="25" id="ryd-65-kgk"/>
+                                            </constraints>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="medium">
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                            </preferredSymbolConfiguration>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="8th-dN-zPX">
+                                            <rect key="frame" x="335" y="11" width="59" height="28"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFc-0S-4re">
+                                                    <rect key="frame" x="0.0" y="0.0" width="22" height="28"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3S-97-Nki">
+                                                    <rect key="frame" x="37" y="0.0" width="22" height="28"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="22" id="6nT-v0-vnn"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                    <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Tie-4w-qQ2" firstAttribute="centerY" secondItem="k9J-zG-wtS" secondAttribute="centerY" id="2Hy-ZV-nQP"/>
+                                        <constraint firstItem="Tie-4w-qQ2" firstAttribute="centerX" secondItem="k9J-zG-wtS" secondAttribute="centerX" id="590-ao-LDA"/>
+                                        <constraint firstItem="Wya-fl-UOU" firstAttribute="bottom" secondItem="k9J-zG-wtS" secondAttribute="bottomMargin" id="Kz6-cV-7hc"/>
+                                        <constraint firstItem="Tie-4w-qQ2" firstAttribute="leading" secondItem="Wya-fl-UOU" secondAttribute="trailing" constant="10" id="NXN-6J-iX0"/>
+                                        <constraint firstItem="Wya-fl-UOU" firstAttribute="leading" secondItem="k9J-zG-wtS" secondAttribute="leadingMargin" id="bQG-oe-7lH"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="8th-dN-zPX" secondAttribute="trailing" id="imK-HB-UFX"/>
+                                        <constraint firstItem="8th-dN-zPX" firstAttribute="top" secondItem="k9J-zG-wtS" secondAttribute="topMargin" id="kll-bs-ow3"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="8th-dN-zPX" secondAttribute="bottom" id="pEa-5b-nNH"/>
+                                        <constraint firstItem="Wya-fl-UOU" firstAttribute="top" secondItem="k9J-zG-wtS" secondAttribute="topMargin" id="stw-4h-rIO"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dayNameLabel" destination="Wya-fl-UOU" id="tKW-B5-V2T"/>
+                                    <outlet property="iconImageView" destination="Tie-4w-qQ2" id="G9q-w3-UG6"/>
+                                    <outlet property="maximumTemperatureLabel" destination="BFc-0S-4re" id="x8H-rx-K1l"/>
+                                    <outlet property="minimumTemperatureLabel" destination="c3S-97-Nki" id="BDQ-my-lb6"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="4Ea-9V-FP0" id="5yh-G5-8O6"/>
+                            <outlet property="delegate" destination="4Ea-9V-FP0" id="oe7-ao-97M"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="88m-uA-d1x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2454" y="138"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4IO-Tm-FYp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BTs-nz-rOo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jO5-7n-gpp">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="37l-d4-wd1" kind="relationship" relationship="rootViewController" id="OwO-2x-XuG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RXo-kt-86n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="c02d" width="402" height="291"/>
+        <image name="cloud.sun.fill" catalog="system" width="128" height="88"/>
+        <image name="location.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="sun.max.fill" catalog="system" width="128" height="124"/>
+        <image name="thermometer" catalog="system" width="87" height="128"/>
+        <image name="thermometer.snowflake" catalog="system" width="113" height="128"/>
+        <image name="thermometer.sun" catalog="system" width="108" height="128"/>
+        <image name="wind" catalog="system" width="128" height="103"/>
+    </resources>
+</document>

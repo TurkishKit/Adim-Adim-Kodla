@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A1572C624F0767700AC27C4 /* WeeklyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1572C524F0767700AC27C4 /* WeeklyViewController.swift */; };
+		3A24352924F4195D005A5605 /* WeatherPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A24352824F4195D005A5605 /* WeatherPageViewController.swift */; };
+		3AE576D124F551F700C30E39 /* URL+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE576D024F551F700C30E39 /* URL+Ext.swift */; };
+		3AFF96B124EF145100CDF35B /* DayWeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFF96AF24EF145100CDF35B /* DayWeatherTableViewCell.swift */; };
+		3AFF96B724EF145500CDF35B /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFF96B524EF145500CDF35B /* DailyViewController.swift */; };
+		3AFF96BC24EF145A00CDF35B /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFF96BA24EF145A00CDF35B /* UIView+Ext.swift */; };
+		3AFF96C124EF146500CDF35B /* WeatherProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFF96BE24EF146500CDF35B /* WeatherProvider.swift */; };
+		3AFF96C324EF146500CDF35B /* DateConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFF96C024EF146500CDF35B /* DateConfiguration.swift */; };
+		3AFF96C824EF146C00CDF35B /* DailyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFF96C524EF146C00CDF35B /* DailyWeather.swift */; };
+		3AFF96C924EF146C00CDF35B /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFF96C624EF146C00CDF35B /* Weather.swift */; };
+		3AFF96CA24EF146C00CDF35B /* WeatherDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFF96C724EF146C00CDF35B /* WeatherDescription.swift */; };
+		3AFF96CE24EF147700CDF35B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AFF96CC24EF147700CDF35B /* Assets.xcassets */; };
+		3AFF96DA24EF14CE00CDF35B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFF96D824EF14CE00CDF35B /* AppDelegate.swift */; };
+		3AFF96DB24EF14CE00CDF35B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFF96D924EF14CE00CDF35B /* SceneDelegate.swift */; };
+		AFCC6EB424EF1C1A00A5CDFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AFF96D324EF14A300CDF35B /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A1572C524F0767700AC27C4 /* WeeklyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyViewController.swift; sourceTree = "<group>"; };
+		3A24352824F4195D005A5605 /* WeatherPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPageViewController.swift; sourceTree = "<group>"; };
+		3AE576D024F551F700C30E39 /* URL+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Ext.swift"; sourceTree = "<group>"; };
+		3AFF969424EF140500CDF35B /* Hava Durumu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hava Durumu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AFF96AF24EF145100CDF35B /* DayWeatherTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayWeatherTableViewCell.swift; sourceTree = "<group>"; };
+		3AFF96B524EF145500CDF35B /* DailyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyViewController.swift; sourceTree = "<group>"; };
+		3AFF96BA24EF145A00CDF35B /* UIView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		3AFF96BE24EF146500CDF35B /* WeatherProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherProvider.swift; sourceTree = "<group>"; };
+		3AFF96C024EF146500CDF35B /* DateConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateConfiguration.swift; sourceTree = "<group>"; };
+		3AFF96C524EF146C00CDF35B /* DailyWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyWeather.swift; sourceTree = "<group>"; };
+		3AFF96C624EF146C00CDF35B /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		3AFF96C724EF146C00CDF35B /* WeatherDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDescription.swift; sourceTree = "<group>"; };
+		3AFF96CC24EF147700CDF35B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3AFF96CD24EF147700CDF35B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AFF96D224EF14A300CDF35B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3AFF96D424EF14A300CDF35B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3AFF96D824EF14CE00CDF35B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3AFF96D924EF14CE00CDF35B /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AFF969124EF140500CDF35B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3AFF968B24EF140500CDF35B = {
+			isa = PBXGroup;
+			children = (
+				3AFF969624EF140500CDF35B /* Hava Durumu */,
+				3AFF969524EF140500CDF35B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3AFF969524EF140500CDF35B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AFF969424EF140500CDF35B /* Hava Durumu.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AFF969624EF140500CDF35B /* Hava Durumu */ = {
+			isa = PBXGroup;
+			children = (
+				3AFF96D024EF14A300CDF35B /* Storyboards */,
+				3AFF96B324EF145500CDF35B /* Controllers */,
+				3AFF96AE24EF145100CDF35B /* Views */,
+				3AFF96C424EF146C00CDF35B /* Models */,
+				3AFF96BD24EF146500CDF35B /* Helpers */,
+				3AFF96B824EF145A00CDF35B /* Extensions */,
+				3AFF96CB24EF147700CDF35B /* Resources */,
+				3AFF96D724EF14CE00CDF35B /* Utilities */,
+			);
+			path = "Hava Durumu";
+			sourceTree = "<group>";
+		};
+		3AFF96AE24EF145100CDF35B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3AFF96AF24EF145100CDF35B /* DayWeatherTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3AFF96B324EF145500CDF35B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3A24352824F4195D005A5605 /* WeatherPageViewController.swift */,
+				3AFF96B524EF145500CDF35B /* DailyViewController.swift */,
+				3A1572C524F0767700AC27C4 /* WeeklyViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3AFF96B824EF145A00CDF35B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3AFF96BA24EF145A00CDF35B /* UIView+Ext.swift */,
+				3AE576D024F551F700C30E39 /* URL+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3AFF96BD24EF146500CDF35B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3AFF96BE24EF146500CDF35B /* WeatherProvider.swift */,
+				3AFF96C024EF146500CDF35B /* DateConfiguration.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3AFF96C424EF146C00CDF35B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3AFF96C624EF146C00CDF35B /* Weather.swift */,
+				3AFF96C724EF146C00CDF35B /* WeatherDescription.swift */,
+				3AFF96C524EF146C00CDF35B /* DailyWeather.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3AFF96CB24EF147700CDF35B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3AFF96CD24EF147700CDF35B /* Info.plist */,
+				3AFF96CC24EF147700CDF35B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3AFF96D024EF14A300CDF35B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3AFF96D324EF14A300CDF35B /* Main.storyboard */,
+				3AFF96D124EF14A300CDF35B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3AFF96D724EF14CE00CDF35B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3AFF96D824EF14CE00CDF35B /* AppDelegate.swift */,
+				3AFF96D924EF14CE00CDF35B /* SceneDelegate.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AFF969324EF140500CDF35B /* Hava Durumu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AFF96A824EF140C00CDF35B /* Build configuration list for PBXNativeTarget "Hava Durumu" */;
+			buildPhases = (
+				3AFF969024EF140500CDF35B /* Sources */,
+				3AFF969124EF140500CDF35B /* Frameworks */,
+				3AFF969224EF140500CDF35B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hava Durumu";
+			packageProductDependencies = (
+			);
+			productName = "Hava Durumu";
+			productReference = 3AFF969424EF140500CDF35B /* Hava Durumu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3AFF968C24EF140500CDF35B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = TurkishKit;
+				TargetAttributes = {
+					3AFF969324EF140500CDF35B = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 3AFF968F24EF140500CDF35B /* Build configuration list for PBXProject "Hava Durumu" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3AFF968B24EF140500CDF35B;
+			packageReferences = (
+			);
+			productRefGroup = 3AFF969524EF140500CDF35B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AFF969324EF140500CDF35B /* Hava Durumu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3AFF969224EF140500CDF35B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AFF96CE24EF147700CDF35B /* Assets.xcassets in Resources */,
+				AFCC6EB424EF1C1A00A5CDFF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AFF969024EF140500CDF35B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AFF96B724EF145500CDF35B /* DailyViewController.swift in Sources */,
+				3AFF96DB24EF14CE00CDF35B /* SceneDelegate.swift in Sources */,
+				3AFF96C124EF146500CDF35B /* WeatherProvider.swift in Sources */,
+				3AE576D124F551F700C30E39 /* URL+Ext.swift in Sources */,
+				3AFF96C924EF146C00CDF35B /* Weather.swift in Sources */,
+				3AFF96CA24EF146C00CDF35B /* WeatherDescription.swift in Sources */,
+				3AFF96B124EF145100CDF35B /* DayWeatherTableViewCell.swift in Sources */,
+				3AFF96DA24EF14CE00CDF35B /* AppDelegate.swift in Sources */,
+				3AFF96BC24EF145A00CDF35B /* UIView+Ext.swift in Sources */,
+				3AFF96C324EF146500CDF35B /* DateConfiguration.swift in Sources */,
+				3A1572C624F0767700AC27C4 /* WeeklyViewController.swift in Sources */,
+				3A24352924F4195D005A5605 /* WeatherPageViewController.swift in Sources */,
+				3AFF96C824EF146C00CDF35B /* DailyWeather.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3AFF96D124EF14A300CDF35B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AFF96D224EF14A300CDF35B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3AFF96D324EF14A300CDF35B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AFF96D424EF14A300CDF35B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3AFF96A624EF140C00CDF35B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3AFF96A724EF140C00CDF35B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3AFF96A924EF140C00CDF35B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Hava Durumu/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.turkishkit.Hava-Durumu";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3AFF96AA24EF140C00CDF35B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Hava Durumu/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.turkishkit.Hava-Durumu";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AFF968F24EF140500CDF35B /* Build configuration list for PBXProject "Hava Durumu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AFF96A624EF140C00CDF35B /* Debug */,
+				3AFF96A724EF140C00CDF35B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AFF96A824EF140C00CDF35B /* Build configuration list for PBXNativeTarget "Hava Durumu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AFF96A924EF140C00CDF35B /* Debug */,
+				3AFF96AA24EF140C00CDF35B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3AFF968C24EF140500CDF35B /* Project object */;
+}
