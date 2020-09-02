@@ -21,9 +21,9 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string></string>
+	<string>Hava durumu bilgilerini çekmek için lokasyon bilgine ihtiyacımız var.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string>Hava durumu bilgilerini çekmek için lokasyon bilgine ihtiyacımız var.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
