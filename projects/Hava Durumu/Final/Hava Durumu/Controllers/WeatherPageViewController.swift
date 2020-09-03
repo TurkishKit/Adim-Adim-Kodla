@@ -41,6 +41,7 @@ class WeatherPageViewController: UIPageViewController {
         
         locationManager.delegate = self
         locationManager.requestLocation()
+        locationManager.requestAlwaysAuthorization()
         
         updateCurrentController(animated: false)
     }

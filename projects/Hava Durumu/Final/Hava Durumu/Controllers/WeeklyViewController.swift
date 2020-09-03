@@ -16,6 +16,7 @@ class WeeklyViewController: UITableViewController {
     let cellIdentifier = "DayWeatherCell"
     let maxDayCount = 10
     
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         

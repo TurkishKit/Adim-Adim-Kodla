@@ -23,7 +23,6 @@ struct DailyWeather: Codable {
     var cloudCoverage: Int
     var weatherDescription: WeatherDescription
     
-    // MARK: - Enumerations
     enum CodingKeys: String, CodingKey {
         case maxTemperature = "max_temp"
         case minTemperature = "min_temp"

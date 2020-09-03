@@ -20,7 +20,7 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>NSLocationAlwaysUsageDescription</key>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>Hava durumu bilgilerini çekmek için lokasyon bilgine ihtiyacımız var.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Hava durumu bilgilerini çekmek için lokasyon bilgine ihtiyacımız var.</string>

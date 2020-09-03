@@ -1,17 +1,15 @@
 //
-//  WeatherContainerViewController.swift
+//  WeeklyViewController.swift
 //  Hava Durumu
 //
-//  Created by Can Balkaya on 8/24/20.
+//  Created by Can Balkaya on 8/22/20.
 //  Copyright © 2020 TurkishKit. All rights reserved.
 //
 
 import UIKit
-import CoreLocation
+import MapKit
 
-class WeatherPageViewController: UIPageViewController {
-    
-    // MARK: - UI Elements
+class WeeklyViewController: UITableViewController {
     
     // MARK: - Properties
     
@@ -21,6 +19,4 @@ class WeatherPageViewController: UIPageViewController {
     }
     
     // MARK: - Functions
-    
-    // MARK: Actions
 }
