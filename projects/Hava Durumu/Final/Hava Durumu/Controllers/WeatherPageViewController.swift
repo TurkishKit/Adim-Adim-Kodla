@@ -67,7 +67,7 @@ class WeatherPageViewController: UIPageViewController {
 extension WeatherPageViewController: CLLocationManagerDelegate {
     
     // MARK: - Functions
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+    private func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         switch status {
         case .notDetermined:
             locationManager.requestWhenInUseAuthorization()
