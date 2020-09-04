@@ -30,7 +30,6 @@ class WeeklyViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as? DayWeatherTableViewCell {
-            cell.backgroundColor = .none
             if let weatherData = weather?.data[indexPath.row] {
                 cell.update(with: weatherData)
             }
