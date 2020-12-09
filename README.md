@@ -22,7 +22,7 @@ Her ayın ilk haftası TurkishKit sosyal medyalarında yayınlanan projeler ile 
 ### Harekete Geç
 
 1. Yukarıda bulunan "Clone or download" butonuna tıkla ve "Download ZIP" ile bu kaynağı edin.
-2. Projects -> Hava Durumu -> Başlangıç klasörüne eriş.
+2. Projects -> Bütçe -> Başlangıç klasörüne eriş.
 3. Geliştirme kılavuzunundaki adımları takip et. Projeni geliştir.
 4. Uygulamanı #turkishkit etiketi ile paylaş, sosyal medyalarda sana yer verelim.
 
@@ -30,17 +30,19 @@ Her ayın ilk haftası TurkishKit sosyal medyalarında yayınlanan projeler ile 
 
 ## Projeler
 
-![Project Row 1](images/hava.durumu.row.png)
+![Project Row 1](images/bütçe.row.png)
 &nbsp;
-![Project Row 2](images/hatırlatıcı.row.png)
+![Project Row 2](images/hava.durumu.row.png)
 &nbsp;
-![Project Row 3](images/el.yikama.row.png)
+![Project Row 3](images/hatırlatıcı.row.png)
 &nbsp;
-![Project Row 4](images/su.tabiki.row.png)
+![Project Row 4](images/el.yikama.row.png)
 &nbsp;
-![Project Row 5](images/haberler.row.png)
+![Project Row 5](images/su.tabiki.row.png)
 &nbsp;
-![Project Row 6](images/top.charts.row.png)
+![Project Row 6](images/haberler.row.png)
+&nbsp;
+![Project Row 7](images/top.charts.row.png)
 
 &nbsp;
 
