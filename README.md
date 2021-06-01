@@ -46,4 +46,4 @@ Her ayın ilk haftası TurkishKit sosyal medyalarında yayınlanan projeler ile 
 
 &nbsp;
 
-Copyright © 2020 TurkishKit — Tüm Hakları Saklıdır
+Copyright © 2021 TurkishKit — Tüm Hakları Saklıdır
